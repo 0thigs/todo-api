@@ -30,7 +30,7 @@ server.delete('/todos', async (request, response) => {
 
 //ALTERAR TODOS
 server.put('/todos', (request, response) => {
-    //MAKE IT
+    //MAKE ITT
 })
 
 server.listen({
