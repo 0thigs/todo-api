@@ -1,5 +1,9 @@
 import { sql } from "./db.js";
 
+// sql`
+//     drop table todos;
+// `.then("Dropado!")
+
 sql`
     CREATE TABLE todos (
     id SERIAL PRIMARY KEY,
