@@ -29,8 +29,10 @@ server.delete('/todos', async (request, response) => {
 })
 
 //ALTERAR TODOS
-server.put('/todos', (request, response) => {
-    //MAKE IT
+server.put('/todos', async (request, response) => {
+    const { id, todo, done } = request.body
+    await database.update(id, todo, done)
+    return response.status(204).send()
 })
 
 server.listen({
