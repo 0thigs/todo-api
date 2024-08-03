@@ -30,8 +30,8 @@ server.delete('/todos', async (request, response) => {
 
 //ALTERAR TODOS
 server.put('/todos', async (request, response) => {
-    const { id, todo, done } = request.body
-    await database.update(id, todo, done)
+    const { id, done } = request.body
+    await database.update(id, done)
     return response.status(204).send()
 })
 
