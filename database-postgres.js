@@ -31,10 +31,10 @@ export class databasePostgres {
         }
     }
 
-    async update(id, todo, done) {
+    async update(id, done) {
         try {
             await sql`
-                UPDATE todos SET todo = ${todo}, done = ${done} WHERE id = ${id};
+                UPDATE todos SET done = ${done} WHERE id = ${id};
             `
         }
         catch(error) {
