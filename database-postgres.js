@@ -29,6 +29,17 @@ export class databasePostgres {
         catch(error) {
             console.log(error)
         }
+    }
+
+    async update(id, todo, done) {
+        try {
+            await sql`
+                UPDATE todos SET todo = ${todo}, done = ${done} WHERE id = ${id};
+            `
+        }
+        catch(error) {
+            console.log(error)
+        }
 
     }
 }
