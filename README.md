@@ -72,7 +72,7 @@ O servidor irá iniciar na porta `3333` (ou na porta especificada pela variável
 - Node.js
 - Fastify
 - PostgreSQL
-- Postgres (driver)
+- Postgres (With NEON SERVERLESS)
 
 ## Considerações Finais
 
